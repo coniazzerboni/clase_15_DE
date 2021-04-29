@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Contacto</title>
+</head>
+<body>
+
+<div id="contenedorCto">
+
+    <header>
+        <nav id="barraNav">
+            <ul id="padreNav">
+                <li><a href="index.html" class="textoNav">Home</a></li>
+                <li><a href="Nosotros.html" class="textoNav">Nosotros</a></li>
+                <li><a href="Productos.html" class="textoNav">Productos</a></li>
+                <li><a href="elaboracion.html" class="textoNav">Elaboración</a></li>
+                <li><a href="contacto.html" class="textoNav">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+
+    <div id="bloqueContacto">
+
+        <img src="fotos/cocinachocolate.jpg" id="imgContacto" class="image-fluid" alt="">
+
+        <div id="textoContacto">
+        
+            <h1>Contactanos!</h1>
+
+            <p class="parraCon">Dejanos tu comentario o cualquier consulta que tengas</p>
+
+            <form action="">
+            <div class="form-group">
+                <label for="nombreusuario" class="textoForm">Nombre:</label> 
+                <input type="text" placeholder="Ingrese su nombre" id="nombreusuario" class="form-control"> 
+
+                <label for="email" class="textoForm">Email:</label>
+                <input type="text" placeholder="ej:juan@gmail.com" id="email" class="form-control"> 
+
+                <label for="" class="textoForm">Motivo de contacto:</label>
+                    <select name="" id="" class="form-control">
+                        <option value="">Tengo una consulta</option>
+                        <option value="">Quiero contarles algo</option>
+                        <option value="">Tengo un reclamo</option>
+                    </select>
+
+                <label for="mensaje" class="textoForm">Mensaje:</label>
+                <textarea name="" id="mensaje" cols="30" rows="10" class="form-control"></textarea> 
+
+                <br>
+                
+                <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    ENVIAR
+                    </button>
+  
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Reclamo</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        ¿Estás seguro de enviar el reclamo?
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CERRAR</button>
+                        <button type="button" class="btn btn-primary">ENVIAR</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            
+
+                <br>
+
+            </div>
+            </form>
+
+        </div>
+
+    </div>
+
+    </section>
+
+    <footer>
+        <p class="parraFooter">Copyright © 2021 - Todos los derechos reservados</p>
+
+    </footer>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,210 @@
+h1{
+    color: rgb(169, 233, 169);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+h2{
+    color: rgb(109, 151, 109);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.nave{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(169, 233, 169);
+    list-style-type: none;
+
+    &__lista{
+        list-style-type: none;
+        display: flex;
+        margin: 0;
+        padding-top: 1%;
+        background-color: rgb(169, 233, 169);
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+
+    &__item{
+        list-style-type: none;
+        margin: 10px;
+        padding: 0;
+        font-family: sans-serif;
+        font-size: 120%;
+        color: white;
+
+    }
+
+}
+
+$colorGris: rgb(228, 228, 228);
+
+.caja{
+    display: flex;
+    background-color: $colorGris;
+    padding: 1%;
+
+    &__img{
+        width: 10%;
+        height: 10%;
+        margin-left: 20%;
+    }
+
+
+    &__titulo{
+        font-family: 'Roboto', sans-serif;
+        color: black;
+        margin-left: 5%;
+    }
+
+    &__texto{
+        font-family: 'Roboto', sans-serif;
+        color: darkslategray;
+        margin-left: 5%;
+    }
+
+
+}
+
+.cajaDos{
+    @extend .caja;
+    background-color: darken($colorGris, 20%)
+}
+
+.cajaTres{
+    @extend .caja;
+    background-color: darken($colorGris, 40%);
+}
+
+
+.contenidoDos{
+    display: flex;
+
+}
+
+.contenido{
+    display: flex;
+    margin-top: 5%;
+
+    &__img{
+        width: 50%;
+        height: 50%;
+        margin-left: 10%;
+    }
+
+    &__titulo{
+        font-family: 'Roboto', sans-serif;
+        color:  rgb(169, 233, 169);
+        margin-left: 5%;
+    }
+
+    &__texto{
+        font-family: 'Roboto', sans-serif;
+        color: darkslategray;
+        margin-left: 5%;
+    }
+
+
+}
+
+
+
+.pie{
+    width: 100%;
+    height: 20%;
+    background-color: black;
+    align-items: center;
+    display: flex;
+
+    &__img{
+        width: 5%;
+        height: 5%;
+        margin-left: 5%;
+    }
+    
+    &__texto{
+        color: white;
+        size: 80%;
+        margin-left: 60%;
+
+    }
+
+
+}
+
+$grisClaro: rgb(207, 207, 207);
+
+.padrePto{
+    background-color: $grisClaro;
+    display: flex;
+    margin: 2px;
+}
+
+.fotoPto{
+    width: 10%;
+    height: 10%;
+}
+
+.parraPto{
+    font-family: 'Roboto', sans-serif;
+    font-size: 80%;
+    color: darkslategray;
+}
+
+.padrePtoDos{
+    @extend .padrePto;
+    background-color: darken($grisClaro, 20%);
+}
+
+.padrePtoTres{
+    @extend .padrePto;
+    background-color: darken($grisClaro, 40%);
+}
+
+.fotoPtoDos{
+    width: 20%;
+    height: 20%;
+}
+
+.producto{
+    display: flex;
+}
+
+@mixin tituloProducto($colorLetra , $tamaño){
+    font-family: 'Roboto', sans-serif;
+    color: $colorLetra;
+    font-size: $tamaño;
+}
+
+.tituloPto{
+    @include tituloProducto(rgb(103, 223, 213) , 30px);
+}
+
+.tituloPtoDos{
+    @include tituloProducto(rgb(44, 129, 89) , 50px);
+}
+
+.tituloPtoTres{
+    @include tituloProducto(rgb(11, 37, 26) , 70px);
+}
+
+
+@mixin textoProducto($colorLetra , $tamaño){
+    font-family: 'Roboto', sans-serif;
+    color: $colorLetra;
+    font-size: $tamaño;
+}
+
+.textoPto{
+    @include tituloProducto(rgb(49, 49, 49) , 10px);
+}
+
+.textoPtoDos{
+    @include tituloProducto(rgb(97, 97, 97) , 20px);
+}
+
+.textoPtoTres{
+    @include tituloProducto(rgb(170, 168, 168) , 40px);
+}

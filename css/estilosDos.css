@@ -1,0 +1,144 @@
+h1 {
+  color: #a9e9a9;
+  font-family: 'Roboto', sans-serif;
+  text-align: center; }
+
+h2 {
+  color: #6d976d;
+  font-family: 'Roboto', sans-serif;
+  text-align: center; }
+
+.nave {
+  width: 100%;
+  height: 60px;
+  background-color: #a9e9a9;
+  list-style-type: none; }
+  .nave__lista {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding-top: 1%;
+    background-color: #a9e9a9;
+    align-items: center;
+    justify-content: space-evenly; }
+  .nave__item {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 120%;
+    color: white; }
+
+.caja, .cajaDos, .cajaTres {
+  display: flex;
+  background-color: #e4e4e4;
+  padding: 1%; }
+  .caja__img {
+    width: 10%;
+    height: 10%;
+    margin-left: 20%; }
+  .caja__titulo {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    margin-left: 5%; }
+  .caja__texto {
+    font-family: 'Roboto', sans-serif;
+    color: darkslategray;
+    margin-left: 5%; }
+
+.cajaDos {
+  background-color: #b1b1b1; }
+
+.cajaTres {
+  background-color: #7e7e7e; }
+
+.contenidoDos {
+  display: flex; }
+
+.contenido {
+  display: flex;
+  margin-top: 5%; }
+  .contenido__img {
+    width: 50%;
+    height: 50%;
+    margin-left: 10%; }
+  .contenido__titulo {
+    font-family: 'Roboto', sans-serif;
+    color: #a9e9a9;
+    margin-left: 5%; }
+  .contenido__texto {
+    font-family: 'Roboto', sans-serif;
+    color: darkslategray;
+    margin-left: 5%; }
+
+.pie {
+  width: 100%;
+  height: 20%;
+  background-color: black;
+  align-items: center;
+  display: flex; }
+  .pie__img {
+    width: 5%;
+    height: 5%;
+    margin-left: 5%; }
+  .pie__texto {
+    color: white;
+    size: 80%;
+    margin-left: 60%; }
+
+.padrePto, .padrePtoDos, .padrePtoTres {
+  background-color: #cfcfcf;
+  display: flex;
+  margin: 2px; }
+
+.fotoPto {
+  width: 10%;
+  height: 10%; }
+
+.parraPto {
+  font-family: 'Roboto', sans-serif;
+  font-size: 80%;
+  color: darkslategray; }
+
+.padrePtoDos {
+  background-color: #9c9c9c; }
+
+.padrePtoTres {
+  background-color: dimgray; }
+
+.fotoPtoDos {
+  width: 20%;
+  height: 20%; }
+
+.producto {
+  display: flex; }
+
+.tituloPto {
+  font-family: 'Roboto', sans-serif;
+  color: #67dfd5;
+  font-size: 30px; }
+
+.tituloPtoDos {
+  font-family: 'Roboto', sans-serif;
+  color: #2c8159;
+  font-size: 50px; }
+
+.tituloPtoTres {
+  font-family: 'Roboto', sans-serif;
+  color: #0b251a;
+  font-size: 70px; }
+
+.textoPto {
+  font-family: 'Roboto', sans-serif;
+  color: #313131;
+  font-size: 10px; }
+
+.textoPtoDos {
+  font-family: 'Roboto', sans-serif;
+  color: #616161;
+  font-size: 20px; }
+
+.textoPtoTres {
+  font-family: 'Roboto', sans-serif;
+  color: #aaa8a8;
+  font-size: 40px; }
